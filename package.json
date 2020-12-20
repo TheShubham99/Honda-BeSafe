@@ -1,0 +1,19 @@
+{
+  "name": "honda-besafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheShubham99/Honda-BeSafe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheShubham99/Honda-BeSafe/issues"
+  },
+  "homepage": "https://github.com/TheShubham99/Honda-BeSafe#readme"
+}
