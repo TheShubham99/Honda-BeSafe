@@ -56,7 +56,6 @@ input {
   font-family: 'Josefin Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   color: white;
-  background: #fff;
   margin: 1em;
   border: 1em;
   border-color: transparent;
@@ -71,11 +70,10 @@ input {
   font-weight: 400;
   position: relative;
   transition: all 0.25s;
-}
-input:disabled {
   background-color: #222;
   color: #fff;
 }
+
 input:hover {
   -moz-box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.05);

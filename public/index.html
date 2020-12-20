@@ -6,6 +6,13 @@
         <script src="app.js"></script> 
     </head>
 
+<script>
+    function update_phone(ph){
+        fetch(`/update?ph=`+ph.replace("+","").replaceAll(" ",""))
+    }
+</script>
+
+
     <center>
     <div class="bg container-fluid">
         
@@ -45,7 +52,7 @@
                 <input id="model" placeholder="Car Model" type="text" disabled/>
             </div>
             
-            <button>Save</button>
+            <button onclick="update_phone(document.getElementById('phone').value.toString())">Save</button>
         </div>          
         
       </div>
@@ -53,7 +60,21 @@
 </center>
 
 <script>
-    load_data();
+    fetch('/load')
+    .then((res)=>{
+        res.json()
+        .then((data)=>{
+            
+            document.getElementById("name").value=data['name'];
+            document.getElementById("phone").value=data['phone'];
+            document.getElementById("model").value=data['car'];
+            document.getElementById("lat").value=data['lat'];
+            document.getElementById("lon").value=data['lon'];
+            document.getElementById("id").value=data['id'];
+
+        })
+        .catch((err)=> console.log("error"))
+    }).catch((e)=>console.log("error"));
 </script>
 
 </html>
