@@ -1,10 +1,12 @@
 {
-    "name":"Prathamesh Sahsrabhojane.",
+    "name":"Prathamesh Sahsrabhojane",
     "id":"ssahasrabhojane",
     "lon":"77,31,52.248",
     "lat":"28,26,49.866",
     "ignition":"ON",
     "vehicle_speed":"100",
+    "phone_number":"+917588826076",
+    "car_model":"Honda City",
     "updated_on":"1.59E+12"
 
 }

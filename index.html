@@ -1,0 +1,59 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="./index.css"></link> 
+        <script src="app.js"></script> 
+    </head>
+
+    <center>
+    <div class="bg container-fluid">
+        
+        <nav class="navbar">
+        <img class="logo" src="Honda-Connect-Logo.png"></img>
+        </nav>
+
+          <h1>BeSafe Connect information</h1>
+          
+          <div class="form-row">
+            <div>
+                <label style="color:white; font-size: 3rem;">Name : </label>
+                <input id="name" placeholder="Customer Name" type="text" disabled/>
+            </div>
+            <div>
+                <label style="color:white; font-size: 3rem;">Id : </label>
+                <input id="id" placeholder="Id" type="text" disabled/>
+            </div>
+
+            <div>
+                <label style="color:white; font-size: 3rem;">Longitude : </label>
+                <input id="lon" placeholder="Longitude Value" type="text" disabled/>
+            </div>
+
+            <div>
+                <label style="color:white; font-size: 3rem;">Latitude : </label>
+                <input id="lat" placeholder="Latitude Value" type="text" disabled/>
+            </div>
+            
+            <div>
+                <label style="color:white; font-size: 3rem;">Phone Number : </label>
+                <input id="phone" placeholder="+xxxxxxxxxx" type="text" />
+            </div>
+
+            <div>
+                <label style="color:white; font-size: 3rem;">Car Model : </label>
+                <input id="model" placeholder="Car Model" type="text" disabled/>
+            </div>
+            
+            <button>Save</button>
+        </div>          
+        
+      </div>
+    
+</center>
+
+<script>
+    load_data();
+</script>
+
+</html>
