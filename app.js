@@ -1,14 +1,16 @@
 const http = require('http')
 const fs = require('fs')
+const express = require('express')
 
-const server = http.createServer((req, res) => {
-  res.writeHead(200, { 'content-type': 'text/html' })
-  fs.createReadStream('index.html').pipe(res)
-})
+const app = express()
 
-server.listen(process.env.PORT || 3000)
+app.get('/', function(req, res) {
+    res.sendFile('/index.html');
+});
 
-function load_data(){
+app.listen(process.env.PORT || 3000)
+
+/* function load_data(){
    
     var name,phone,id,lon,lat,model;
    
@@ -38,3 +40,4 @@ function load_data(){
 
 }
 
+ */
