@@ -4,6 +4,10 @@ const express = require('express')
 var path = require('path');
 const app = express()
 
+
+const dotenv = require('dotenv');
+dotenv.config();
+
 var bodyParser = require('body-parser');
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
@@ -12,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 var Airtable = require('airtable');
 Airtable.configure({
   endpointUrl: 'https://api.airtable.com',
-  apiKey: 'keyQMQW52TXceWFk5'
+  apiKey: process.env.AIRTABLE_API
 });
 var base = Airtable.base('appaMvw4sxN3BYSvg');
 
